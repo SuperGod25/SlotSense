@@ -69,25 +69,26 @@ const EducationSection: React.FC = () => {
         <CardContent className="pt-6">
           <Tabs defaultValue="law-large-numbers" className="w-full">
           <TabsList className="flex flex-wrap w-full gap-2">
-    <TabsTrigger
-      value="law-large-numbers"
-      className="flex-1 min-w-[100px] text-xs sm:text-sm py-2 h-auto whitespace-normal text-center"
-    >
-      Legea Numerelor Mari
-    </TabsTrigger>
-    <TabsTrigger
-      value="expected-value"
-      className="flex-1 min-w-[100px] text-xs sm:text-sm py-2 h-auto whitespace-normal text-center"
-    >
-      Valoarea Așteptată
-    </TabsTrigger>
-    <TabsTrigger
-      value="house-edge"
-      className="flex-1 min-w-[100px] text-xs sm:text-sm py-2 h-auto whitespace-normal text-center"
-    >
-      Avantajul Cazinoului
-    </TabsTrigger>
-  </TabsList>
+  <TabsTrigger
+    value="law-large-numbers"
+    className="flex-1 min-w-[90px] text-[10px] sm:text-xs md:text-sm py-2 px-2 h-auto whitespace-normal text-center leading-tight"
+  >
+    Legea Numerelor Mari
+  </TabsTrigger>
+  <TabsTrigger
+    value="expected-value"
+    className="flex-1 min-w-[90px] text-[10px] sm:text-xs md:text-sm py-2 px-2 h-auto whitespace-normal text-center leading-tight"
+  >
+    Valoarea Așteptată
+  </TabsTrigger>
+  <TabsTrigger
+    value="house-edge"
+    className="flex-1 min-w-[90px] text-[10px] sm:text-xs md:text-sm py-2 px-2 h-auto whitespace-normal text-center leading-tight"
+  >
+    Avantajul Cazinoului
+  </TabsTrigger>
+</TabsList>
+
 
 
             
