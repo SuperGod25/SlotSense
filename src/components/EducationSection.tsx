@@ -69,15 +69,25 @@ const EducationSection: React.FC = () => {
         <CardContent className="pt-6">
           <Tabs defaultValue="law-large-numbers" className="w-full">
           <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 gap-2">
-  <TabsTrigger value="law-large-numbers" className="w-full">
-    Legea Numerelor Mari
-  </TabsTrigger>
-  <TabsTrigger value="expected-value" className="w-full">
-    Valoarea Așteptată
-  </TabsTrigger>
-  <TabsTrigger value="house-edge" className="w-full">
-    Avantajul Cazinoului
-  </TabsTrigger>
+          <TabsTrigger
+  value="law-large-numbers"
+  className="w-full text-xs md:text-sm py-2 h-auto whitespace-normal"
+>
+  Legea Numerelor Mari
+</TabsTrigger>
+<TabsTrigger
+  value="expected-value"
+  className="w-full text-xs md:text-sm py-2 h-auto whitespace-normal"
+>
+  Valoarea Așteptată
+</TabsTrigger>
+<TabsTrigger
+  value="house-edge"
+  className="w-full text-xs md:text-sm py-2 h-auto whitespace-normal"
+>
+  Avantajul Cazinoului
+</TabsTrigger>
+
 </TabsList>
 
             
