@@ -1,21 +1,51 @@
 # SlotSense
 
 
-O aplicație educațională despre riscurile jocurilor de noroc.
+🎓 **Suport web pentru proiectul de licență „Modelare probabilistică a pierderilor în jocurile de noroc de tip slots”**
+
+---
 
 ## 📢 Descriere
-Această aplicație are ca scop creșterea conștientizării asupra mecanismelor slot machines și a probabilităților reale din spatele câștigurilor și pierderilor.
 
-- 🎰 Simulator slot machine realist
-- 📊 Grafic în timp real al soldului
-- 💡 Mesaje de atenționare și statistici despre șansele reale
-- 📚 Secțiune educațională cu informații detaliate
-- ⚠️ Banner permanent de avertizare și footer cu resurse utile
+Acest proiect reprezintă implementarea practică a lucrării de licență realizată de Filipovici Sebastian și are ca scop crearea unui simulator educațional pentru jocurile de noroc tip slot machine.
 
-## ⚠️ Atenție
-Toate informațiile sunt bazate pe modele matematice și nu reprezintă sfaturi financiare.
-Joacă responsabil! Dacă ai nevoie de ajutor, sună la linia gratuită:
-**0800 800 099** sau vizitează [jocresponsabil.ro](https://www.jocresponsabil.ro).
+**Scopul principal:** Creșterea gradului de conștientizare asupra riscurilor financiare și emoționale asociate jocurilor de noroc, bazat pe modele matematice.
+
+---
+
+## 🎰 Funcționalități principale
+
+- Simulator interactiv slot machine
+- Sistem auto-play cu setări flexibile
+- Grafice live pentru evoluția soldului
+- Mesaje de conștientizare și statistici reale despre șanse
+- Secțiune educațională despre mecanismele jocurilor de noroc
+- Banner de avertizare vizibil permanent
+- Footer cu resurse utile și linii de ajutor
+
+---
+
+## 📚 Tehnologii folosite
+
+- React + TypeScript
+- Tailwind CSS
+- Recharts (graficare)
+- React Router
+- Vite
+
+---
+
+## ⚠️ Atenție importantă
+
+Această aplicație este un proiect educațional și NU reprezintă un sfat financiar sau un produs comercial.
+
+Toate informațiile sunt bazate pe modele matematice.
+
+Dacă ai nevoie de ajutor legat de jocurile de noroc, contactează:
+- 📞 **Linia gratuită de consiliere:** 0800 800 099
+- 🌐 [www.jocresponsabil.ro](https://www.jocresponsabil.ro)
+
+---
 
 ## 📦 Instalare
 
