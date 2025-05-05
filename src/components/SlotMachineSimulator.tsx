@@ -321,7 +321,7 @@ const SlotMachineSimulator: React.FC = () => {
           </CardContent>
           <CardFooter>
             <Button 
-              className="w-full border-2 border-slot-darkblue text-slot-darkblue hover:bg-gray-100"
+              className="w-full border-2 border-slot-darkblue text-slot-white hover:bg-gray-100"
               onClick={resetSimulation}
             >
               Resetează simularea
