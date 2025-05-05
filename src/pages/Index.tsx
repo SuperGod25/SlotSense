@@ -29,7 +29,7 @@ const Index: React.FC = () => {
       case 'home':
         return <LandingPage/>
       default:
-        return <SlotMachineSimulator />; // Default to slot machine simulator
+        return <LandingPage />; // Default to slot machine simulator
     }
   };
 
