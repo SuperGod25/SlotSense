@@ -71,22 +71,23 @@ const EducationSection: React.FC = () => {
           <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 gap-2">
           <TabsTrigger
   value="law-large-numbers"
-  className="w-full text-xs md:text-sm py-2 h-auto whitespace-normal"
+  className="w-full text-xs sm:text-sm py-2 h-auto whitespace-normal text-center"
 >
   Legea Numerelor Mari
 </TabsTrigger>
 <TabsTrigger
   value="expected-value"
-  className="w-full text-xs md:text-sm py-2 h-auto whitespace-normal"
+  className="w-full text-xs sm:text-sm py-2 h-auto whitespace-normal text-center"
 >
   Valoarea Așteptată
 </TabsTrigger>
 <TabsTrigger
   value="house-edge"
-  className="w-full text-xs md:text-sm py-2 h-auto whitespace-normal"
+  className="w-full text-xs sm:text-sm py-2 h-auto whitespace-normal text-center"
 >
   Avantajul Cazinoului
 </TabsTrigger>
+
 
 </TabsList>
 
