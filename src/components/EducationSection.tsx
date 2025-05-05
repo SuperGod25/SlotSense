@@ -53,20 +53,23 @@ const EducationSection: React.FC = () => {
   };
   
   return (
-    <div className="container mx-auto px-4 py-6">
+    <div className="container mx-auto px-4 sm:px-6 md:px-8 py-6">
       <Card className="shadow-md mb-6">
         <CardHeader className="bg-slot-darkblue text-white">
-          <CardTitle className="flex items-center gap-2">
+        <CardTitle className="flex items-center gap-2 break-words">
+
             <BookOpen className="h-6 w-6" />
             Teoria matematică din spatele jocurilor de noroc
           </CardTitle>
-          <CardDescription className="text-gray-200">
+          <CardDescription className="text-gray-200 text-sm md:text-base break-words">
+
             Înțelege de ce păcănelele sunt profitabile pentru cazinouri
           </CardDescription>
         </CardHeader>
         <CardContent className="pt-6">
           <Tabs defaultValue="law-large-numbers" className="w-full">
-            <TabsList className="grid w-full grid-cols-1 md:grid-cols-3">
+            <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 gap-2">
+
               <TabsTrigger value="law-large-numbers">Legea Numerelor Mari</TabsTrigger>
               <TabsTrigger value="expected-value">Valoarea Așteptată</TabsTrigger>
               <TabsTrigger value="house-edge">Avantajul Cazinoului</TabsTrigger>
@@ -344,13 +347,15 @@ const EducationSection: React.FC = () => {
                       </ul>
                       
                       <div className="mt-4 space-y-3">
-                        <div className="flex justify-between border-b pb-1">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+
                           <span>Pierdere pe oră:</span>
                           <span className="font-bold text-red-600">
                             {(10 * 60 * 1 * 0.1).toFixed(0)} lei
                           </span>
                         </div>
-                        <div className="flex justify-between border-b pb-1">
+                        <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+
                           <span>Pierdere după 4 ore:</span>
                           <span className="font-bold text-red-600">
                             {(10 * 60 * 4 * 1 * 0.1).toFixed(0)} lei

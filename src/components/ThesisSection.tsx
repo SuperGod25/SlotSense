@@ -33,7 +33,7 @@ const ThesisSection: React.FC = () => {
           <CardHeader className="bg-slot-darkblue text-white">
             <CardTitle className="flex items-center gap-2 text-xl md:text-2xl">
               <FileText className="h-6 w-6" />
-              Teză de Licență: Modelarea Probabilistică a Pierderilor la Păcănele
+              Teză de Licență: Modelarea Probabilistică a Pierderilor în Jocurile de Noroc de tip Slots
             </CardTitle>
             <CardDescription className="text-gray-200">
               Analiză matematică riguroasă a jocurilor de noroc
