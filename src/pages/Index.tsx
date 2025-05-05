@@ -12,7 +12,7 @@ import SiteFooter from '@/components/SiteFooter';
 
 const Index: React.FC = () => {
   // Change default section to slot-simulator to have it open by default
-  const [activeSection, setActiveSection] = useState('slot-simulator');
+  const [activeSection, setActiveSection] = useState('home');
 
   const renderActiveSection = () => {
     switch (activeSection) {
