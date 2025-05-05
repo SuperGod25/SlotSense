@@ -68,22 +68,23 @@ const EducationSection: React.FC = () => {
         </CardHeader>
         <CardContent className="pt-6">
           <Tabs defaultValue="law-large-numbers" className="w-full">
-          <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 gap-2">
+          <TabsList className="grid w-full grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-2">
+
           <TabsTrigger
   value="law-large-numbers"
-  className="w-full text-xs sm:text-sm py-2 h-auto whitespace-normal text-center"
+  className="w-full text-xs sm:text-sm py-1.5 h-auto whitespace-normal text-center"
 >
   Legea Numerelor Mari
 </TabsTrigger>
 <TabsTrigger
   value="expected-value"
-  className="w-full text-xs sm:text-sm py-2 h-auto whitespace-normal text-center"
+  className="w-full text-xs sm:text-sm py-1.5 h-auto whitespace-normal text-center"
 >
   Valoarea Așteptată
 </TabsTrigger>
 <TabsTrigger
   value="house-edge"
-  className="w-full text-xs sm:text-sm py-2 h-auto whitespace-normal text-center"
+  className="w-full text-xs sm:text-sm py-1.5 h-auto whitespace-normal text-center"
 >
   Avantajul Cazinoului
 </TabsTrigger>
