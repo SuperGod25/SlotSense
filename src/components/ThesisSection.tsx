@@ -143,9 +143,7 @@ const ThesisSection: React.FC = () => {
           </CardContent>
           
           <CardFooter className="bg-gray-50 flex flex-col sm:flex-row justify-between items-center gap-3">
-            <div className="text-sm text-gray-600">
-              © 2025 SlotSense
-            </div>
+            
             <Button
               variant="link"
               className="text-slot-darkblue"
