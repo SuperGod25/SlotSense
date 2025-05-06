@@ -4,7 +4,8 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/components/ui/button";
 import { Download, FileText, ExternalLink, BookOpen, CoinsIcon } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
-import { Mail } from 'lucide-react';
+import { Linkedin, Mail } from 'lucide-react'; // Make sure `Linkedin` is imported
+
 
 
 const ThesisSection: React.FC = () => {
@@ -185,7 +186,7 @@ const ThesisSection: React.FC = () => {
 
 {showAuthorModal && (
   <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center p-4">
-    <div className="bg-white rounded-lg shadow-lg w-full max-w-md p-6 relative">
+    <div className="bg-white rounded-lg shadow-lg w-full max-w-md p-4 sm:p-6 relative">
       <button
         onClick={() => setShowAuthorModal(false)}
         className="absolute top-3 right-3 text-gray-600 hover:text-gray-900"
@@ -195,10 +196,10 @@ const ThesisSection: React.FC = () => {
       <div className="text-center">
         <img
           src="/author_profile.jpg" // <-- Add your profile picture here
-          alt="Author"
+          alt="Autor"
           className="w-24 h-24 rounded-full mx-auto mb-4"
         />
-        <h2 className="text-xl font-bold mb-2">Sebastian Filipovici</h2>
+        <h2 className="text-lg sm:text-xl font-bold mb-2 break-words">Sebastian Filipovici</h2>
         <p className="mb-4 text-sm text-gray-600">Contactează-mă pe rețelele sociale:</p>
         <div className="flex justify-center gap-4">
         <a href="mailto:sebastian.filipovici@stud.ubbcluj.ro" className="text-slot-darkblue hover:text-blue-700">
@@ -213,6 +214,15 @@ const ThesisSection: React.FC = () => {
           <a href="https://github.com/supergod25" target="_blank" rel="noopener noreferrer">
           <img alt="Github" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgNTAgNTAiIHdpZHRoPSI1MHB4IiBoZWlnaHQ9IjUwcHgiPiAgICA8cGF0aCBkPSJNMTcuNzkxLDQ2LjgzNkMxOC41MDIsNDYuNTMsMTksNDUuODIzLDE5LDQ1di01LjRjMC0wLjE5NywwLjAxNi0wLjQwMiwwLjA0MS0wLjYxQzE5LjAyNywzOC45OTQsMTkuMDE0LDM4Ljk5NywxOSwzOSBjMCwwLTMsMC0zLjYsMGMtMS41LDAtMi44LTAuNi0zLjQtMS44Yy0wLjctMS4zLTEtMy41LTIuOC00LjdDOC45LDMyLjMsOS4xLDMyLDkuNywzMmMwLjYsMC4xLDEuOSwwLjksMi43LDJjMC45LDEuMSwxLjgsMiwzLjQsMiBjMi40ODcsMCwzLjgyLTAuMTI1LDQuNjIyLTAuNTU1QzIxLjM1NiwzNC4wNTYsMjIuNjQ5LDMzLDI0LDMzdi0wLjAyNWMtNS42NjgtMC4xODItOS4yODktMi4wNjYtMTAuOTc1LTQuOTc1IGMtMy42NjUsMC4wNDItNi44NTYsMC40MDUtOC42NzcsMC43MDdjLTAuMDU4LTAuMzI3LTAuMTA4LTAuNjU2LTAuMTUxLTAuOTg3YzEuNzk3LTAuMjk2LDQuODQzLTAuNjQ3LDguMzQ1LTAuNzE0IGMtMC4xMTItMC4yNzYtMC4yMDktMC41NTktMC4yOTEtMC44NDljLTMuNTExLTAuMTc4LTYuNTQxLTAuMDM5LTguMTg3LDAuMDk3Yy0wLjAyLTAuMzMyLTAuMDQ3LTAuNjYzLTAuMDUxLTAuOTk5IGMxLjY0OS0wLjEzNSw0LjU5Ny0wLjI3LDguMDE4LTAuMTExYy0wLjA3OS0wLjUtMC4xMy0xLjAxMS0wLjEzLTEuNTQzYzAtMS43LDAuNi0zLjUsMS43LTVjLTAuNS0xLjctMS4yLTUuMywwLjItNi42IGMyLjcsMCw0LjYsMS4zLDUuNSwyLjFDMjEsMTMuNCwyMi45LDEzLDI1LDEzczQsMC40LDUuNiwxLjFjMC45LTAuOCwyLjgtMi4xLDUuNS0yLjFjMS41LDEuNCwwLjcsNSwwLjIsNi42YzEuMSwxLjUsMS43LDMuMiwxLjYsNSBjMCwwLjQ4NC0wLjA0NSwwLjk1MS0wLjExLDEuNDA5YzMuNDk5LTAuMTcyLDYuNTI3LTAuMDM0LDguMjA0LDAuMTAyYy0wLjAwMiwwLjMzNy0wLjAzMywwLjY2Ni0wLjA1MSwwLjk5OSBjLTEuNjcxLTAuMTM4LTQuNzc1LTAuMjgtOC4zNTktMC4wODljLTAuMDg5LDAuMzM2LTAuMTk3LDAuNjYzLTAuMzI1LDAuOThjMy41NDYsMC4wNDYsNi42NjUsMC4zODksOC41NDgsMC42ODkgYy0wLjA0MywwLjMzMi0wLjA5MywwLjY2MS0wLjE1MSwwLjk4N2MtMS45MTItMC4zMDYtNS4xNzEtMC42NjQtOC44NzktMC42ODJDMzUuMTEyLDMwLjg3MywzMS41NTcsMzIuNzUsMjYsMzIuOTY5VjMzIGMyLjYsMCw1LDMuOSw1LDYuNlY0NWMwLDAuODIzLDAuNDk4LDEuNTMsMS4yMDksMS44MzZDNDEuMzcsNDMuODA0LDQ4LDM1LjE2NCw0OCwyNUM0OCwxMi4zMTgsMzcuNjgzLDIsMjUsMlMyLDEyLjMxOCwyLDI1IEMyLDM1LjE2NCw4LjYzLDQzLjgwNCwxNy43OTEsNDYuODM2eiIvPjwvc3ZnPg==" className="w-6 h-6" />
           </a>
+          <a
+  href="https://www.linkedin.com/in/sebastian-filipovici"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-slot-darkblue hover:text-blue-700"
+>
+  <Linkedin className="w-6 h-6" />
+</a>
+
         </div>
       </div>
     </div>
